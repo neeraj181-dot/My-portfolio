@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        .page {
+            background: #1a1a1a;
+            border-radius: 10px;
+            padding: 20px;
+            width: 90%;
+            max-width: 400px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #ff3333;
+            margin-bottom: 15px;
+        }
+        .skills p {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+        .skills p i {
+            margin-right: 8px;
+            color: #ff3333;
+        }
+        .qualification {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .social-icons a {
+            color: white;
+            margin-right: 15px;
+            font-size: 1.5rem;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            color: #ff3333;
+            transform: scale(1.1);
+        }
+        .contact-btn {
+            display: inline-block;
+            background-color: #ff3333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .contact-btn:hover {
+            background-color: #cc0000;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        .contact-form button {
+            background-color: #ff3333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <img src="./myphoto.jpg" alt="Neeraj V V" class="profile-image">
+        <h1><span style=color:#cc0000 >HI, </span>I'm Neeraj V V</h1>
+        <p class="location">Malappuram, India</p>
+        <h2>📌 Skills:</h2>
+        <div class="skills">
+            <p><i class="fas fa-terminal"></i> Linux</p>
+            <p><i class="fas fa-code"></i> C Programming</p>
+            <p><i class="fas fa-paint-brush"></i> UI/UX Design</p>
+            <p><i class="fas fa-camera-retro"></i> Photoshop</p>
+            <p><i class="fas fa-database"></i> MySQL</p>
+        </div>
+        <p class="qualification">📖 Post Graduated Integrated MCA</p>
+        <p><h2>About Me</h2>
+            I'm Neeraj V V, a tech enthusiast with a passion for problem-solving and creative design. Based in Malappuram, India, I specialize in Linux, C programming, UI/UX design, Photoshop, and MySQL.
+        </p>
+    </div>
+    <div class="page">
+        <h2>Contact Me</h2>
+        <p>📧 neerajshaju95@gmail.com</p>
+        <p>📞 9496856167</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <a href="#" class="contact-btn">Download CV</a>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
